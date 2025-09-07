@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/elise-pitre-co-op-portfolio/static/css/main.86a6f312.css",
-    "main.js": "/elise-pitre-co-op-portfolio/static/js/main.686dc564.js",
+    "main.js": "/elise-pitre-co-op-portfolio/static/js/main.e0af877d.js",
     "static/media/DSCF1113.jpeg": "/elise-pitre-co-op-portfolio/static/media/DSCF1113.6648c79cbd48c6b9e65f.jpeg",
     "static/media/EliseAtComputerSAP.jpg": "/elise-pitre-co-op-portfolio/static/media/EliseAtComputerSAP.fb0df92ea582d517a5fb.jpg",
     "static/media/EliseWithSAPLogoTeeth.jpg": "/elise-pitre-co-op-portfolio/static/media/EliseWithSAPLogoTeeth.5ba7041b460715a74e7f.jpg",
     "static/media/EliseAtWhiteboardSAP.jpg": "/elise-pitre-co-op-portfolio/static/media/EliseAtWhiteboardSAP.17503ed5e34d0079c90d.jpg",
     "index.html": "/elise-pitre-co-op-portfolio/index.html",
     "main.86a6f312.css.map": "/elise-pitre-co-op-portfolio/static/css/main.86a6f312.css.map",
-    "main.686dc564.js.map": "/elise-pitre-co-op-portfolio/static/js/main.686dc564.js.map"
+    "main.e0af877d.js.map": "/elise-pitre-co-op-portfolio/static/js/main.e0af877d.js.map"
   },
   "entrypoints": [
     "static/css/main.86a6f312.css",
-    "static/js/main.686dc564.js"
+    "static/js/main.e0af877d.js"
   ]
 }
