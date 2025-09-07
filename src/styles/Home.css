@@ -1,0 +1,20 @@
+.work-term-media {
+  margin-top: 20px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Add consistent spacing between images */
+  align-items: center;
+}
+
+.media-profile {
+  width: 900px; /* Explicitly set the width */
+  height: 675px; /* Calculate height based on 4:3 aspect ratio (900px width / 4 * 3) */
+  object-fit: contain; /* Ensure the entire image fits within the container without cropping */
+  border-radius: 0; /* Remove rounded corners */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure proper alignment */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+  border: none; /* Remove any border that might interfere with the shape */
+  background-color: #f6f5f7; /* Add a background color to fill empty space around the image */
+}
