@@ -1,6 +1,6 @@
 # Co-op Work Term Report
 
-This project is a React application designed to showcase a co-op work term report. It includes various components and pages that provide an overview of the work term experience, learnings, and conclusions. The live website can be found here: https://melodious-khapse-c248a2.netlify.app/
+This project is a React application designed to showcase a co-op work term report. It includes various components and pages that provide an overview of the work term experience, learnings, and conclusions. The live website can be found here: https://elise-pitre.netlify.app/
 
 ## Project Structure
 
