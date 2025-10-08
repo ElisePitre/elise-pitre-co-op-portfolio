@@ -57,7 +57,3 @@ The application will be running on `http://localhost:3000`.
 - A responsive header with navigation links.
 - A home page that provides an overview of the co-op work term.
 - A detailed report page that includes experiences, learnings, and conclusions.
-
-## License
-
-This project is licensed under the MIT License.
