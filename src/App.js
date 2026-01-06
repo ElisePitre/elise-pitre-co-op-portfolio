@@ -1,7 +1,5 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import Report from "./pages/Report";  // Import Report
 import Header from "./components/Header";  // Import Header
 import "./styles/App.css";
 
@@ -13,7 +11,6 @@ function App() {
         <main>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/report" component={Report} />
           </Switch>
         </main>
       </Router>

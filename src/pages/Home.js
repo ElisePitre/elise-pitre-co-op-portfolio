@@ -2,6 +2,10 @@ import bannerImage from "../styles/DSCF1113.jpeg";
 import eliseAtComputer from "../styles/EliseAtComputerSAP.jpg";
 import eliseAtWhiteboard from "../styles/EliseAtWhiteboardSAP.jpg";
 import eliseWithSAPLogoTeeth from "../styles/EliseWithSAPLogoTeeth.jpg";
+import elisePresenting from "../styles/elisePresenting.jpeg";
+import sapInWinter from "../styles/sapInWinter.jpeg";
+import postPresentationSelfie from "../styles/postPresentationSelfie.jpeg";
+import eliseWithR2D2 from "../styles/eliseWithR2D2.png";
 
 // --- SVG Icon Components ---
 function LinkedInIcon(props) {
@@ -41,6 +45,9 @@ function Home() {
             <h2 className="hero-subtitle">SAP CI/CD Pipeline Developer Co-op Portfolio</h2>
             <div className="hero-links-bar">
               <div className="hero-links-left">
+                <a href="#work-term-2" title="Work Term 2" className="text-link">
+                  Work Term 2
+                </a>
                 <a href="#work-term-1" title="Work Term 1" className="text-link">
                   Work Term 1
                 </a>
@@ -87,6 +94,79 @@ function Home() {
           Welcome to my co-op portfolio! Here you'll find my experiences, skills, and reflections from my work terms. 
           Explore the projects, roles, and growth throughout my journey!
         </p>
+      </section>
+
+      {/* Work Term 2 Section */}
+      <section id="work-term-2" className="section work-term-section">
+        <div className="work-term-layout">
+          <div className="work-term-info">
+            <h2>Work Term 2: SAP CI/CD Pipeline Developer</h2>
+            <h3>Introduction</h3>
+            <p>
+              From September to December 2025, I completed the second of two co-op terms as an SAP iXp Intern in the CI/CD Developer 
+              role. I worked on automated pipelines that ensure code quality and efficiency, gaining experience with Git, Gerrit, 
+              Jenkins, Bash, and Groovy while also building confidence in communication, collaboration, and problem-solving.
+            </p>
+            <h3>Employer</h3>
+            <p>
+              SAP is a global leader in enterprise software, serving 400,000+ customers worldwide. I worked in the iXp program, 
+              which provides interns with meaningful projects, mentorship, and professional growth opportunities. My team focused 
+              on building and maintaining CI/CD pipelines, a critical part of modern software development.
+            </p>
+            <h3>Goals</h3>
+            <p>
+              This term, I had many goals for topics I wanted to learn more about, in addition to improvements and expansions I 
+              wanted to make given my familiarity with the codebase. I wanted to gain more experience implementing OOP, completing 
+              code reviews, and making changes to improve optimization and reliability.
+            </p>
+            <p>
+              I feel as though I gained valuable experience in these areas, as I had hoped. For example, I refactored the pipeline 
+              codebase to be written in Python and use inheritance, improving code reuse and modularity. Additionally, I implemented 
+              a server pool feature where tests dynamically choose a server on which to execute, allowing for more efficient use of 
+              resources. Lastly, I developed a change that skips tests if the Gerrit patchset being tested is not the most recent 
+              version, avoiding redundant builds and barrier failures.
+            </p>
+            <h3>Job Description</h3>
+            <p>
+               As a CI/CD Pipeline Developer Intern in my second term, I:
+            </p>
+            <ul>
+              <li>Supported and improved automated pipelines for SAP HANA drivers, including ODBC, JDBC, Node, Python, Go, Dbisqlc, Dbisql, 
+                Dbcapi, and Odm (supporting approximately 50 developers)</li>
+              <li>Debugged and resolved complex pipeline issues, enabling faster and more reliable builds and deployments</li>
+              <li>Utilized Jenkins and Gerrit for builds and reviews</li>
+              <li>Wrote and edited scripts in Python, Bash, Groovy, and Java</li>
+              <li>Expanded barriers to add testing for the Python driver, testing the product version with the SAP Common Crypto Library, 
+                and testing on additional platforms (such as Windows and Linux Arm)</li>
+            </ul>
+            <p>
+              blah blah blah
+            </p>
+            <h3>Conclusion</h3>
+            <p>
+              Overall, this term has been an amazing experience, for which I am incredibly grateful. I really enjoyed the opportunity to work 
+              on a codebase that I was already familiar with. I believe this gave me the opportunity to make more meaningful changes and dive 
+              into deeper projects than I otherwise wouldn’t have had time to accomplish.
+            </p>
+            <h3>Acknowledgments</h3>
+            <p>
+              I want to give a huge thank you to all of my colleagues at the SAP Waterloo office. It was an amazing place to work, and a huge 
+              part of that was the people around me. I especially want to thank my manager Dan for helping me grow throughout the last 8 months 
+              and for being such an encouraging and positive supervisor. I also want to give credit to my incredible coworker Ian for building 
+              the life-size and fully functional R2-D2 in the last picture. I learned a ton during my time here thanks to the amazing people 
+              and workplace culture
+            </p>
+          </div>
+          <div className="work-term-media">
+            <img src={elisePresenting} alt="Elise presenting at SAP" className="media-profile" />
+            <div style={{ height: "24px" }} />
+            <img src={sapInWinter} alt="SAP building in winter" className="media-profile" />
+            <div style={{ height: "24px" }} />
+            <img src={postPresentationSelfie} alt="Post Presentation Selfie" className="media-profile" />
+            <div style={{ height: "24px" }} />
+            <img src={eliseWithR2D2} alt="Elise with R2D2 at SAP" className="media-profile" />
+          </div>
+        </div>
       </section>
 
       {/* Work Term 1 Section */}
