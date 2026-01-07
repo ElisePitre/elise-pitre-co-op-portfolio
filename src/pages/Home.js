@@ -139,9 +139,6 @@ function Home() {
               <li>Expanded barriers to add testing for the Python driver, testing the product version with the SAP Common Crypto Library, 
                 and testing on additional platforms (such as Windows and Linux Arm)</li>
             </ul>
-            <p>
-              blah blah blah
-            </p>
             <h3>Conclusion</h3>
             <p>
               Overall, this term has been an amazing experience, for which I am incredibly grateful. I really enjoyed the opportunity to work 
