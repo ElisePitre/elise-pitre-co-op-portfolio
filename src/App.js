@@ -4,6 +4,7 @@ import Header from "./components/Header";  // Import Header
 import "./styles/App.css";
 import "@fontsource/space-grotesk"; // Import Space Grotesk font
 import "@fontsource/hachi-maru-pop"; // Import hachi maru pop font
+import "@fontsource/shrikhand"; // Defaults to weight 400
 
 
 function App() {

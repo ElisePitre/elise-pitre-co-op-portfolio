@@ -114,29 +114,11 @@ body, html {
 }
 
 .hero-title {
-  font-family: "Hachi Maru Pop", cursive;
+  font-family: "Shrikhand", cursive;
   font-size: 4rem;
-  color: #7a4e63;
+  color: #2d4634;
   margin-bottom: 8px;
   letter-spacing: 2px;
-}
-
-/* Decorative flower before and after the hero title */
-.hero-title::before {
-  content: "★";
-  color: inherit;
-  font-size: 1em; /* same sizing relative to the title */
-  margin-right: 0.6rem;
-  display: inline-block;
-  vertical-align: middle;
-}
-.hero-title::after {
-  content: "★";
-  color: inherit;
-  font-size: 1em; /* same sizing relative to the title */
-  margin-left: 0.6rem;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .hero-subtitle {
