@@ -19,7 +19,7 @@ function LinkedInIcon(props) {
 function EmailIcon(props) {
   return (
     <svg viewBox="0 0 32 32" width={28} height={28} fill="currentColor" {...props}>
-      <rect x="2" y="2" width="28" height="28" rx="6" fill="#67c8f0" />
+      <rect x="2" y="2" width="28" height="28" rx="6" fill="#6d96a8ff" />
       <path d="M8 10h16c.6 0 1 .4 1 1v10c0 .6-.4 1-1 1H8c-.6 0-1-.4-1-1V11c0-.6.4-1 1-1zm0 1v.2l8 5.3 8-5.3V11H8zm16 10V12.1l-7.5 5c-.3.2-.7.2-1 0L8 12.1V21h16z" fill="#fff" />
     </svg>
   );
@@ -42,7 +42,7 @@ function Home() {
         <div className="hero-overlay">
           <div className="hero-content">
             <h1 className="hero-title">Elise Pitre</h1>
-            <h2 className="hero-subtitle">SAP CI/CD Pipeline Developer Co-op Portfolio</h2>
+            <h2 className="hero-subtitle">Personal Website & Co-op Portfolio</h2>
             <div className="hero-links-bar">
               <div className="hero-links-left">
                 <a href="#work-term-2" title="Work Term 2" className="text-link">
@@ -91,8 +91,8 @@ function Home() {
       <section id="welcome" className="section welcome-section spaced-section">
         <h2>Welcome</h2>
         <p>
-          Welcome to my co-op portfolio! Here you'll find my experiences, skills, and reflections from my work terms. 
-          Explore the projects, roles, and growth throughout my journey!
+          Welcome to my personal website and co-op portfolio! Here you'll find my experiences, skills, and reflections from my work terms. 
+          Explore the goals, projects, roles, and growth throughout my journey!
         </p>
       </section>
 
