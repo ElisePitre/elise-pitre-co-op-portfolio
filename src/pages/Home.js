@@ -6,6 +6,7 @@ import elisePresenting from "../styles/elisePresenting.jpeg";
 import sapInWinter from "../styles/sapInWinter.jpeg";
 import postPresentationSelfie from "../styles/postPresentationSelfie.jpeg";
 import eliseWithR2D2 from "../styles/eliseWithR2D2.png";
+import aboutMeCollage from "../styles/IMG_2740.JPG";
 
 // --- SVG Icon Components ---
 function LinkedInIcon(props) {
@@ -45,6 +46,9 @@ function Home() {
             <h2 className="hero-subtitle">Personal Website & Co-op Portfolio</h2>
             <div className="hero-links-bar">
               <div className="hero-links-left">
+                <a href="#about" title="About Me" className="text-link">
+                  About Me
+                </a>
                 <a href="#work-term-2" title="Work Term 2" className="text-link">
                   Work Term 2
                 </a>
@@ -96,6 +100,36 @@ function Home() {
         </p>
       </section>
 
+      {/* About me section */}
+      <section id="about" className="section about-section spaced-section">
+        <div className="about-section-info">
+            <h2>About Me</h2>
+            <p>
+          Hi, my name is Elise and I’m a Software Engineering (Co-op) student at the University of Guelph with a minor 
+          in Sustainable Business. As I begin my career journey, I’m eager to explore how technology can drive meaningful, 
+          inclusive, and sustainable change. I’m especially interested in integrating accessibility, equity, and 
+          environmental responsibility into the way we design and build software.
+        </p>
+
+        <p>
+          I’m currently seeking opportunities to grow my skills, gain hands-on experience in software development, and 
+          collaborate on projects that make a positive impact.
+        </p>
+
+        <p>
+          Outside of computing, I’m passionate about dance and artistic movement. I’m a member of the Guelph Tap Pak 
+          competitive dance team and teach a variety of dance styles to students of different ages. I also love quiet 
+          creative pursuits like reading, crocheting, and sewing, which balance my fast-paced academic life with 
+          something mindful and rewarding.
+        </p>
+
+        <p>
+          While engineering and dance may seem worlds apart, both challenge me to think creatively, pay attention to 
+          detail, and work collaboratively — qualities I hope to bring into every project I pursue.
+        </p>
+        </div>
+      </section>
+
       {/* Work Term 2 Section */}
       <section id="work-term-2" className="section work-term-section">
         <div className="work-term-layout">
@@ -123,7 +157,6 @@ function Home() {
               I feel as though I gained valuable experience in these areas, as I had hoped. For example, I refactored the pipeline 
               codebase to be written in Python and use inheritance, improving code reuse and modularity. Additionally, I implemented 
               a server pool feature where tests dynamically choose a server on which to execute, allowing for more efficient use of 
-              resources. Lastly, I developed a change that skips tests if the Gerrit patchset being tested is not the most recent 
               version, avoiding redundant builds and barrier failures.
             </p>
             <h3>Job Description</h3>

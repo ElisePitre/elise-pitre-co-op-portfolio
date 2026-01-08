@@ -139,6 +139,42 @@ body, html {
   padding: 44px 32px 38px 32px;
 }
 
+.about-section {
+  margin-top: 44px; /* Extra spacing below hero */
+}
+
+.about-section h2, .work-term-section h2, .contact-section h2 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #2d4634; /* Slightly muted deep green */
+  font-size: 2.1rem;
+  margin-bottom: 18px;
+}
+
+.about-section p {
+  font-size: 1.25rem;
+  color: #525034;
+  margin-bottom: 6px;
+}
+
+.about-section-info h3 {
+  color: #2d4634; /* Slightly muted deep green */
+  font-size: 1.15rem;
+  margin-top: 16px;
+}
+
+.about-section-info ul {
+  margin: 10px 0 0 18px;
+  color: #7b7f8a;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.about-section-info p {
+  color: #7b7f8a;
+  font-size: 1.13rem;
+  margin-bottom: 12px;
+}
+
 .welcome-section {
   margin-top: 44px; /* Extra spacing below hero */
 }
@@ -219,6 +255,13 @@ body, html {
   border: none;
 }
 
+/* Prevent cropping for images that should show fully (e.g., collage) */
+.media-profile.no-crop {
+  object-fit: contain;
+  height: auto; /* allow the image to determine its height */
+  max-height: 600px; /* constrain to a reasonable max so layout doesn't break */
+}
+
 /* Make only the second and third media-profile images shorter and wider */
 .media-profile[alt="Elise working at computer at SAP"],
 .media-profile[alt="Elise at SAP whiteboard"] {
@@ -290,10 +333,10 @@ body, html {
   .hero-links a { padding: 6px 12px; font-size: 0.95rem; }
   .section { padding: 12px 1vw 8px 1vw; }
   .media-profile {
-    width: 100%; /* Make the image take the full width of its container */
-    max-width: 1000px; /* Increase the maximum width for larger images */
-    height: 500px; /* Set a fixed height for a rectangular shape */
-    object-fit: cover; /* Ensure the image fills the container while maintaining its aspect ratio */
+  width: 100%; /* Make the image take the full width of its container */
+  max-width: 1000px; /* Increase the maximum width for larger images */
+  height: auto; /* let images keep their natural height on small screens */
+  object-fit: contain; /* Ensure the image fits within the container without cropping */
     border-radius: 0; /* Remove rounded corners to make the images rectangular */
     margin: 0 auto; /* Center the image */
     display: block; /* Ensure proper alignment */
