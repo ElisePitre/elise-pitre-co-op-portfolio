@@ -8,7 +8,7 @@
 body, html {
   width: 100%;
   min-height: 100vh;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   background: #f6f5f7;
   color: #353535;
 }
@@ -95,9 +95,9 @@ body, html {
 
 /* Text tab links */
 .text-link {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.1rem;
-  color: #175c33; /* Deeper forest green */
+  color: #2d4634; /* Deeper forest green */
   background: rgba(23,92,51,0.07); /* Deeper forest green background */
   text-decoration: none;
   padding: 8px 22px;
@@ -109,23 +109,41 @@ body, html {
 }
 
 .text-link:hover {
-  background: #175c33;
+  background: #2d4634;
   color: #fff;
 }
 
 .hero-title {
-  font-family: "Fugaz One", cursive;
-  font-size: 2.8rem;
-  color: #175c33; /* Deeper forest green */
+  font-family: "Hachi Maru Pop", cursive;
+  font-size: 4rem;
+  color: #7a4e63;
   margin-bottom: 8px;
   letter-spacing: 2px;
+}
+
+/* Decorative flower before and after the hero title */
+.hero-title::before {
+  content: "★";
+  color: inherit;
+  font-size: 1em; /* same sizing relative to the title */
+  margin-right: 0.6rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.hero-title::after {
+  content: "★";
+  color: inherit;
+  font-size: 1em; /* same sizing relative to the title */
+  margin-left: 0.6rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   color: #2d4634; /* Slightly muted deep green for subtitle */
   margin-bottom: 16px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /* Section styles */
@@ -144,8 +162,8 @@ body, html {
 }
 
 .welcome-section h2, .work-term-section h2, .contact-section h2 {
-  font-family: "Fugaz One", cursive;
-  color: #175c33; /* Deeper forest green */
+  font-family: "Space Grotesk", sans-serif;
+  color: #2d4634; /* Slightly muted deep green */
   font-size: 2.1rem;
   margin-bottom: 18px;
 }
@@ -171,7 +189,7 @@ body, html {
 }
 
 .work-term-info h3 {
-  color: #175c33; /* Deeper forest green */
+  color: #2d4634; /* Slightly muted deep green */
   font-size: 1.15rem;
   margin-top: 16px;
 }
@@ -239,7 +257,7 @@ body, html {
 }
 
 .contact-section ul li a {
-  color: #175c33; /* Deeper forest green */
+  color: #2d4634; /* Deeper forest green */
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
@@ -286,7 +304,6 @@ body, html {
     padding: 12px 2vw;
     border-radius: 11px;
   }
-  .hero-title { font-size: 1.3rem; }
   .hero-links-bar { gap: 8px; }
   .hero-links a { padding: 6px 12px; font-size: 0.95rem; }
   .section { padding: 12px 1vw 8px 1vw; }
