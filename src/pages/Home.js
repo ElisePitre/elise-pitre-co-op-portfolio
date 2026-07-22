@@ -5,7 +5,6 @@ import eliseWithSAPLogoTeeth from "../styles/EliseWithSAPLogoTeeth.jpg";
 import elisePresenting from "../styles/elisePresenting.jpeg";
 import sapInWinter from "../styles/sapInWinter.jpeg";
 import postPresentationSelfie from "../styles/postPresentationSelfie.jpeg";
-import eliseWithR2D2 from "../styles/eliseWithR2D2.png";
 import aboutMeCollage from "../styles/IMG_2740.JPG";
 
 // --- SVG Icon Components ---
@@ -193,8 +192,6 @@ function Home() {
             <img src={sapInWinter} alt="SAP building in winter" className="media-profile" />
             <div style={{ height: "24px" }} />
             <img src={postPresentationSelfie} alt="Post Presentation Selfie" className="media-profile" />
-            <div style={{ height: "24px" }} />
-            <img src={eliseWithR2D2} alt="Elise with R2D2 at SAP" className="media-profile" />
           </div>
         </div>
       </section>
