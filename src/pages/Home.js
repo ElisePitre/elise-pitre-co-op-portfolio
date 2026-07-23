@@ -1,11 +1,125 @@
-import bannerImage from "../styles/DSCF1113.jpeg";
+import headshot from "../styles/Elise-headshot.png";
 import eliseAtComputer from "../styles/EliseAtComputerSAP.jpg";
 import eliseAtWhiteboard from "../styles/EliseAtWhiteboardSAP.jpg";
 import eliseWithSAPLogoTeeth from "../styles/EliseWithSAPLogoTeeth.jpg";
 import elisePresenting from "../styles/elisePresenting.jpeg";
 import sapInWinter from "../styles/sapInWinter.jpeg";
 import postPresentationSelfie from "../styles/postPresentationSelfie.jpeg";
-import aboutMeCollage from "../styles/IMG_2740.JPG";
+
+const featuredProjects = [
+  {
+    title: "Jumpeace Insights",
+    role: "Frontend Team Lead",
+    summary:
+      "An interactive web tool that uses word embeddings to explore linguistic bias in historical newspapers from 1770 to 1964. Used to examine questions such as: how has the association between 'women' and 'engineer' change over time?",
+    details: [
+      "Led an 8-person team to ship a research-focused product",
+      "Built the React frontend for visual data exploration",
+      "Used feedback to improve clarity and usability",
+    ],
+    meta: "Python, React, Word2Vec, Firebase",
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/ElisePitre/jumpeaceInsights",
+      },
+    ],
+  },
+  {
+    title: "RumiRoutine",
+    role: "Full-Stack Builder",
+    summary:
+      "A cross-platform gamified chore tracking app with shared household progress, Firebase auth, and Duolingo-inspired motivation mechanics.",
+    details: [
+      "Built with Flutter and Dart for mobile-first usage",
+      "Added real-time shared chore tracking across linked users",
+      "Designed XP, streaks, achievements, and a shared household character whose emotion reflects the household's progress and engagement",
+    ],
+    meta: "Flutter, Dart, C++, Firebase",
+    links: [
+      {
+        label: "Live Site",
+        href: "https://rumiroutine.netlify.app/",
+      },
+      {
+        label: "GitHub",
+        href: "https://github.com/ElisePitre/rumiRoutine",
+      },
+    ],
+  },
+];
+
+const skillGroups = [
+  {
+    title: "Languages",
+    items: ["Python", "C", "Java", "JavaScript", "C++", "Dart", "Bash", "Groovy", "Go"],
+  },
+  {
+    title: "Web & Mobile",
+    items: ["React Native", "Flutter", "Firebase"],
+  },
+  {
+    title: "Backend",
+    items: ["Node.js", "REST APIs", "MongoDB", "MySQL"],
+  },
+  {
+    title: "Systems & Tools",
+    items: ["Git", "Gerrit", "Jenkins", "Docker", "CMake", "Linux", "CI/CD"],
+  },
+  {
+    title: "Concepts",
+    items: ["Agile", "Object-Oriented Design", "Debugging", "Testing"],
+  },
+  {
+    title: "AI / Machine Learning",
+    items: ["LLM Integration", "Prompt Engineering", "Word Embeddings", "Agentic Workflows"],
+  },
+];
+
+const experienceEntries = [
+  {
+    title: "Database Client Driver Developer - SAP iXp Intern",
+    company: "SAP Canada",
+    location: "Waterloo, ON",
+    date: "May 2026 - Aug. 2026",
+    summary:
+      "Developed production features and resolved critical bugs across SAP HANA's database client ecosystem.",
+    bullets: [
+      "Implemented ES Module compatibility for the Node.js driver across 36 source files while preserving CommonJS support.",
+      "Authored a technical design evaluating module-loading strategies and regression test coverage.",
+      "Debugged production issues through log analysis and unit testing, prioritizing by customer impact.",
+    ],
+    stack: ["Python", "JavaScript", "C++", "Node.js"],
+  },
+  {
+    title: "Project Lead & Software Engineer (Contract)",
+    company: "Grand River Family Health Organization",
+    location: "Kitchener / Waterloo, ON",
+    date: "Sept. 2024 - May 2026",
+    summary:
+      "MyOnCall is an automated physician scheduling platform that replaces a manual workflow with a more reliable and scalable system.",
+    bullets: [
+      "Led a 12-person engineering team through the full product lifecycle.",
+      "Designed a greedy scheduling algorithm with weighted multi-criteria scoring to balance preferences, fairness, and coverage.",
+      "Reduced administrative workload by 75% per rotation for 29 doctors.",
+    ],
+    stack: ["Python", "MongoDB", "React JS"],
+  },
+  {
+    title: "CI/CD Pipeline Developer - SAP iXp Intern",
+    company: "SAP Canada",
+    location: "Waterloo, ON",
+    date: "May 2025 - Dec. 2025",
+    summary:
+      "Owned CI/CD infrastructure serving 50+ developers and improved reliability through automation and test optimization.",
+    bullets: [
+      "Reduced pipeline complexity by 14% through versioning-based test filtering and parallelization.",
+      "Migrated legacy Bash and Groovy automation to modular Python with unittest coverage.",
+      "Recognized with an outstanding co-op evaluation for building reliable infrastructure.",
+    ],
+    stack: ["Jenkins", "Gerrit", "Git", "Python", "Bash", "Groovy"],
+  },
+];
 
 // --- SVG Icon Components ---
 function LinkedInIcon(props) {
@@ -16,6 +130,7 @@ function LinkedInIcon(props) {
     </svg>
   );
 }
+
 function EmailIcon(props) {
   return (
     <svg viewBox="0 0 32 32" width={28} height={28} fill="currentColor" {...props}>
@@ -24,6 +139,7 @@ function EmailIcon(props) {
     </svg>
   );
 }
+
 function GitHubIcon(props) {
   return (
     <svg viewBox="0 0 32 32" width={28} height={28} fill="currentColor" {...props}>
@@ -33,99 +149,163 @@ function GitHubIcon(props) {
   );
 }
 
+function LinkIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" width={18} height={18} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 1 0-7.07-7.07L11.5 4.43" />
+      <path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 1 0 7.07 7.07L12.5 19.57" />
+    </svg>
+  );
+}
+
 function Home() {
   return (
-    <div className="Home">
-      {/* Hero section */}
-      <div className="hero-banner">
-        <img src={bannerImage} alt="Banner" className="hero-img" />
-        <div className="hero-overlay">
-          <div className="hero-content">
+    <div className="home-page" id="top">
+      <section className="hero-section section-shell">
+        <div className="hero-orb hero-orb-one" />
+        <div className="hero-orb hero-orb-two" />
+        <div className="hero-grid">
+          <div className="hero-copy">
+            <p className="eyebrow">Software engineering co-op student</p>
             <h1 className="hero-title">Elise Pitre</h1>
-            <h2 className="hero-subtitle">Personal Website & Co-op Portfolio</h2>
-            <div className="hero-links-bar">
-              <div className="hero-links-left">
-                <a href="#about" title="About Me" className="text-link">
-                  About Me
-                </a>
-                <a href="#work-term-2" title="Work Term 2" className="text-link">
-                  Work Term 2
-                </a>
-                <a href="#work-term-1" title="Work Term 1" className="text-link">
-                  Work Term 1
-                </a>
-                <a href="#contact" title="Contact" className="text-link">
-                  Contact
-                </a>
-              </div>
-              <div className="hero-links-right">
-                <a
-                  href="https://www.linkedin.com/in/elise-pitre"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="LinkedIn"
-                  className="icon-link"
-                >
-                  <LinkedInIcon />
-                </a>
-                <a
-                  href="mailto:elisempitre@gmail.com"
-                  title="Email"
-                  className="icon-link"
-                >
-                  <EmailIcon />
-                </a>
-                <a
-                  href="https://github.com/ElisePitre"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="GitHub"
-                  className="icon-link"
-                >
-                  <GitHubIcon />
-                </a>
-              </div>
+            <div className="hero-social" aria-label="Social links">
+              <a
+                href="https://www.linkedin.com/in/elise-pitre"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                title="LinkedIn"
+              >
+                <LinkedInIcon />
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:elisempitre@gmail.com" className="social-link" title="Email">
+                <EmailIcon />
+                <span>Email</span>
+              </a>
+              <a
+                href="https://github.com/ElisePitre"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                title="GitHub"
+              >
+                <GitHubIcon />
+                <span>GitHub</span>
+              </a>
             </div>
+            <p className="hero-body">
+              Hi, I’m Elise, a Software Engineering (Co-op) student at the University of Guelph with a minor in Sustainable Business.
+              On the technical side, I love working with algorithms and optimization. Anything that is super analytical and feels like 
+              a puzzle that needs to be solved is my cup of tea. I also love examining the social and ethical side of computing. 
+              Especially in the age of AI, I think it is extremely important to have conversations around the social implications of 
+              software and how to design ethically and inclusively. As I begin my career journey, I’m eager to continue learning and 
+              growing with hands-on experiences.
+            </p>
+            <p className="hero-body">
+              Fun Fact: Outside of computing, I am a member of the Guelph Tap Pak competitive dance team. I also love to read, crochet, and sew in my free time.
+            </p>
           </div>
-        </div>
-      </div>
 
-      {/* Welcome Section */}
-      <section id="welcome" className="section welcome-section spaced-section">
-        <h2>Welcome</h2>
-        <p>
-          Welcome to my personal website and co-op portfolio! Here you'll find my experiences, skills, and reflections from my work terms. 
-          Explore the goals, projects, roles, and growth throughout my journey!
-        </p>
+          <img src={headshot} alt="Elise Pitre headshot" className="hero-headshot" />
+
+        </div>
       </section>
 
-      {/* About me section */}
-      <section id="about" className="section about-section spaced-section">
-        <div className="about-section-info">
-            <h2>About Me</h2>
-            <p>
-          Hi, my name is Elise and I’m a Software Engineering (Co-op) student at the University of Guelph with a minor 
-          in Sustainable Business. As I begin my career journey, I’m eager to explore how technology can drive meaningful, 
-          inclusive, and sustainable change. I’m especially interested in integrating accessibility, equity, and 
-          environmental responsibility into the way we design and build software.
-        </p>
+      <section id="experience" className="section-shell content-section">
+        <div className="section-heading">
+          <p className="eyebrow">Experience</p>
+          <h2>Resume highlights</h2>
+        </div>
+        <div className="experience-list">
+          {experienceEntries.map((entry) => (
+            <article className="experience-card" key={`${entry.title}-${entry.company}`}>
+              <div className="experience-top">
+                <div>
+                  <h3>{entry.title}</h3>
+                  <p className="experience-company">{entry.company}</p>
+                </div>
+                <div className="experience-meta">
+                  <span>{entry.location}</span>
+                  <span>{entry.date}</span>
+                </div>
+              </div>
+              <p className="experience-summary">{entry.summary}</p>
+              <ul className="experience-bullets">
+                {entry.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+              <div className="experience-tech" aria-label={`Technologies used for ${entry.title}`}>
+                {entry.stack.map((tech) => (
+                  <span className="project-tech-chip" key={tech}>
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
-        <p>
-          I’m currently seeking opportunities to grow my skills, gain hands-on experience in software development, and 
-          collaborate on projects that make a positive impact.
-        </p>
+      <section id="projects" className="section-shell content-section">
+        <div className="section-heading">
+          <p className="eyebrow">Selected projects</p>
+          <h2>Projects that show how I build</h2>
+        </div>
+        <div className="project-grid">
+          {featuredProjects.map((project) => (
+            <article className="project-card" key={project.title}>
+              <div className="project-header">
+                <p className="project-role">{project.role}</p>
+                <h3>{project.title}</h3>
+                <div className="project-tech" aria-label={`Technologies used for ${project.title}`}>
+                  {project.meta.split(",").map((tech) => (
+                    <span className="project-tech-chip" key={tech.trim()}>
+                      {tech.trim()}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <p className="project-summary">{project.summary}</p>
+              <ul className="project-details">
+                {project.details.map((detail) => (
+                  <li key={detail}>{detail}</li>
+                ))}
+              </ul>
+              {project.links ? (
+                <div className="project-links">
+                  {project.links.map((link) => (
+                    <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer">
+                      <LinkIcon />
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              ) : null}
+            </article>
+          ))}
+        </div>
+      </section>
 
-        <p>
-          Outside of computing, I’m passionate about dance and artistic movement. I’m a member of the Guelph Tap Pak 
-          competitive dance team and teach a variety of dance styles to students of different ages. I also love quiet 
-          creative pursuits like reading, crocheting, and sewing, which balance my fast-paced academic life with 
-          something mindful and rewarding.
-        </p>
-
-        <p>
-          While engineering and dance may seem worlds apart, both challenge me to think creatively, pay attention to 
-          detail, and work collaboratively — qualities I hope to bring into every project I pursue.
-        </p>
+      <section id="skills" className="section-shell content-section">
+        <div className="section-heading">
+          <p className="eyebrow">Technical skills</p>
+          <h2>Tools and technologies I work with</h2>
+        </div>
+        <div className="skills-list">
+          {skillGroups.map((group) => (
+            <article className="skill-row" key={group.title}>
+              <h3>{group.title}</h3>
+              <div className="skill-items">
+                {group.items.map((item) => (
+                  <span className="skill-item" key={item}>
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
